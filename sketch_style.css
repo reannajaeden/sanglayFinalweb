@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #DADADA;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    flex: 1;
+}
+.search-icon{
+    text-align: right;
+    flex: 1;
+    color: white;
+    margin-right: 20px; 
+    border-radius: 5px;
+}
+
+.searchInput {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333; 
+    width: 300px; 
+}
+
+
+
+.logoname {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.navigation{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 4rem 0 3rem;
+}
+.section-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.shop{
+    margin-top: 2rem;
+
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px,1fr));
+    gap: 1.5rem;
+    padding: 0 100px;
+}
+
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.product-box{
+    position: relative;
+}
+
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
+}
+.full-img {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.full-img img {
+    max-width: 40%;
+    max-height: 80vh; 
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.full-img span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.row4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+
+
+.about-column {
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+    height: 200px;
+    margin: 0 -10px;
+}
+  
+.about-column h2, .about-column p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-justify: distribute-all-lines;
+    margin-top: 10px;
+}
+  
+.about-column p {
+    margin-top: 20px;
+}
+  
+.row4::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;  
+}
+  
+.instagram img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.instagram p{
+    margin-bottom: 1px;
+    margin-left: 1px;
+    text-decoration: none;
+}
+
+.tiktok {
+    display: flex;
+    align-items: center;  
+}
+  
+.tiktok img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.tiktok p{
+    margin-left: 1px;
+    margin-top: 15px;
+}
+  
+footer {
+    background-color: #DADADA;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

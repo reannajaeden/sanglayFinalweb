@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch collection</title>
+    <link rel="stylesheet" href="originals_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <header>
+            <div class="logo">Galerie Riri</div>
+
+            <div class="search-icon">
+                <input type="text" id="searchInput" placeholder="Search..." style="width: 300px; height: 30px; border-radius: 10px;">
+            </div>
+        </header>
+    </header>
+    
+    <div class="logoname">Galerie Riri</div>
+
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="fiinal_website.html">Home</a></li>
+                <li><a href="originals_final.html">Originals</a></li>
+                <li><a href="prints_final.html">Prints</a></li>
+                <li><a href="sketch_final.html">Sketches</a></li>
+                <li><a href="about_final.html">About</a></li>
+            </ul>
+        </nav>
+    </div> 
+
+    <section class="shop container">
+        <h2 class="section-title">Original Collection</h2>
+        <div class="shop-content">
+
+            <div class="full-img" id="fullImgBox">
+                <img src="" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+
+            <div class="product-box">
+                <img src="ORIGINAL/Dundun Forest-ORIGINAL.jpeg" alt="smyth" class="product-img" onclick="openFullImg(this.src)">
+                <h2 class="product-title">Dundun Forest-ORIGINAL</h2>
+                
+            </div>
+
+            <div class="product-box">
+                <img src="ORIGINAL/Heen from Howl-ORIGINAL.jpeg" alt="smyth" class="product-img" onclick="openFullImg(this.src)">
+                <h2 class="product-title">Heen from Howl-ORIGINAL</h2>
+             
+            </div>
+
+            <div class="product-box">
+                <img src="ORIGINAL/HUH Cat-ORIGINAL.jpeg" alt="smyth" class="product-img" onclick="openFullImg(this.src)">
+                <h2 class="product-title">HUH Cat-ORIGINAL</h2>
+                
+            </div>
+
+            <div class="product-box">
+                <img src="ORIGINAL/Kwason-ORIGINAL.jpeg" alt="shells" class="product-img" onclick="openFullImg(this.src)">
+                <h2 class="product-title">Croissant-ORIGINAL</h2>
+                
+            </div>
+
+            <div class="product-box">
+                <img src="ORIGINAL/Mingbirds-ORIGINAL.jpeg" alt="lana" class="product-img" onclick="openFullImg(this.src)">
+                <h2 class="product-title">Mingbirds-ORIGINAL</h2>
+                
+            </div>
+
+            <div class="product-box">
+                <img src="ORIGINAL/Ponyo-ORIGINAL.jpeg" alt="fish" class="product-img" onclick="openFullImg(this.src)">
+                <h2 class="product-title">Ponyo-ORIGINAL</h2>
+               
+            </div>
+
+            <div class="product-box">
+                <img src="ORIGINAL/Sensual-ORIGINAL.jpeg" alt="pome" class="product-img" onclick="openFullImg(this.src)">
+                <h2 class="product-title">Sensual-ORIGINAL</h2>
+               
+            </div>
+
+            <div class="product-box">
+                <img src="ORIGINAL/Spirited Away-ORIGINAL.jpeg" alt="skin" class="product-img" onclick="openFullImg(this.src)">
+                <h2 class="product-title">Spirited Away-ORIGINAL</h2>
+               
+            </div>
+
+            <div class="product-box">
+                <img src="ORIGINAL/They are Watching-ORIGINAL.jpeg" alt="Watcher" class="product-img" onclick="openFullImg(this.src)">
+                <h2 class="product-title">They are Watching-ORIGINAL</h2>
+                
+            </div>
+
+        </div>    
+            
+    </section>
+
+
+    <div class="row4">
+        <div class="about-column">
+          <h2>Customer Service</h2>
+          <p>Do not hesitate to contact us if you have any<br> questions or concerns. We always respond<br> as quickly as we can!</p>
+        </div>
+        <div class="about-column">
+          <h2>Contact</h2>
+          <p>Mail: GalerieRiri.uf@gmail.com</p>
+        </div>
+        <div class="about-column">
+          <h2>Social Media</h2>
+          <div class="instagram">
+            <a href="https://www.instagram.com/jaieeeden/"><img src="ig-logo.png"></a>
+            <a href="https://www.instagram.com/jaieeeden/" style="text-decoration: none;"><p>Instagram</p></a>
+          </div>
+          <div class="tiktok"> 
+            <a href="https://www.tiktok.com/@wishiwashiyuuu_?_t=8lvR7j3ZrQw&_r=1"><img src="tiktok-logo.png"></a>
+            <a href="https://www.instagram.com/jaieeeden/" style="text-decoration: none;"><p>Tiktok</p></a>
+         </div>
+        </div>
+    </div>
+
+    <script>
+
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+       function openFullImg(imgSrc){
+           fullImg.src = imgSrc;
+           fullImgBox.style.display = "flex";
+       }
+
+       function closeFullImg(){
+           fullImgBox.style.display = "none";
+       }
+    </script>
+    <script src="mainjs.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Galerie Riri Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

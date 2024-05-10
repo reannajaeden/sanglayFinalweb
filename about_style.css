@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+    position: relative; /* Make the body the positioning context */
+}
+
+header {
+    background-color: #DADADA;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    flex: 1;
+}
+
+.search-icon{
+    text-align: right;
+    flex: 1;
+    color: white;
+    margin-right: 20px; 
+    border-radius: 5px;
+}
+
+.searchInput {
+    padding: 12px 24px; 
+    border: none;
+    border-radius: 30px; 
+    font-size: 16px;
+    background-color: #fff;
+    color: #333; 
+    width: 300px; 
+}
+
+.logoname {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.navigation{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+}
+
+.row4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+  
+.about-column {
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+    height: 200px;
+    margin: 0 -10px;
+}
+  
+.about-column h2, .about-column p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-justify: distribute-all-lines;
+    margin-top: 10px;
+}
+  
+.about-column p {
+    margin-top: 20px;
+}
+  
+.row4::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;  
+}
+  
+.instagram img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.instagram p{
+    margin-bottom: 1px;
+    margin-left: 1px;
+    text-decoration: none;
+}
+
+.tiktok {
+    display: flex;
+    align-items: center;  
+}
+  
+.tiktok img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.tiktok p{
+    margin-left: 1px;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #DADADA;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
